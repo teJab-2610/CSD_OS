@@ -1,0 +1,82 @@
+This OS is part of the System Design Course. 
+
+# Features
+
+- [x] Risc-V ISA
+- [x] Shell
+- [x] Memory Management
+- [x] Process Management like creating a new process, switching between processes
+- [x] Interrupts and Exceptions
+- [x] Keyboard and Display Drivers 
+- [x] File System and management like creating, deleting, opening, closing files
+- [x] Shell Commands like `cat`, `echo`, `sleep`
+- [ ] System Calls like `open`, `read`, `write`
+
+
+Above are the feature of the JOI OS we are going to build.
+The project structure is as follows:
+
+/JoiOS  
+│
+├── src/
+│   ├── kernel/
+│   │   ├── main.cpp               # Kernel entry point
+│   │   ├── process.cpp            # Process management
+│   │   ├── memory.cpp             # Memory management
+│   │   ├── scheduler.cpp          # Process scheduler
+│   │   ├── syscalls.cpp           # System call implementations
+│   │   └── globals.cpp            # Global variable definitions
+│   │
+│   ├── drivers/
+│   │   ├── display.cpp            # Display driver
+│   │   └── keyboard.cpp           # Keyboard driver
+│   │
+│   ├── lib/
+│   │   ├── data_structures/
+│   │   │   ├── list.cpp           # Linked list implementation
+│   │   │   └── queue.cpp          # Queue implementation
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── string.cpp         # String manipulation utilities
+│   │   │   └── math.cpp           # Math utilities
+│   │   │
+│   │   └── heap.cpp               # Heap memory allocation
+│   │
+│   └── user/
+│       └── shell.cpp              # Simple shell for user interaction
+│
+├── include/
+│   ├── kernel/
+│   │   ├── process.h
+│   │   ├── memory.h
+│   │   ├── scheduler.h
+│   │   ├── syscalls.h
+│   │   ├── globals.h              # Global variable declarations
+│   │   └── registers.h            # Register declarations
+│   │
+│   ├── drivers/
+│   │   ├── display.h
+│   │   └── keyboard.h
+│   │
+│   └── lib/
+│       ├── data_structures/
+│       │   ├── list.h
+│       │   └── queue.h
+│       │
+│       ├── utils/
+│       │   ├── string.h
+│       │   └── math.h
+│       │
+│       └── heap.h
+│
+├── boot/
+│   └── boot.asm                   # Assembly boot code
+│
+├── config/
+│   └── memory_map.h               # Memory layout configuration
+│
+├── docs/
+│   ├── architecture.md            # Overall system architecture
+│   └── api.md                     # API documentation
+│
+└── Makefile                       # Build system
