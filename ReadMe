@@ -23,11 +23,10 @@ The project structure is as follows:
 ├── src/
 │   ├── kernel/
 │   │   ├── main.cpp               # Kernel entry point
-│   │   ├── process.cpp            # Process management
+│   │   ├── process.cpp            # Process management and scheduling
 │   │   ├── memory.cpp             # Memory management
-│   │   ├── scheduler.cpp          # Process scheduler
-│   │   ├── syscalls.cpp           # System call implementations
-│   │   └── globals.cpp            # Global variable definitions
+│   │   ├── interrupts.cpp         # Interrupt handling
+│   │   └── system_library.cpp      # System library functions like input and output stream
 │   │
 │   ├── drivers/
 │   │   ├── display.cpp            # Display driver
@@ -50,14 +49,15 @@ The project structure is as follows:
 │   ├── kernel/
 │   │   ├── process.h
 │   │   ├── memory.h
-│   │   ├── scheduler.h
-│   │   ├── syscalls.h
+│   │   ├── scheduler.h            # Scheduler declarations - Partially implemented
+│   │   ├── syscalls.h             # System call declarations  - Partially implemented
 │   │   ├── globals.h              # Global variable declarations
 │   │   └── registers.h            # Register declarations
 │   │
 │   ├── drivers/
 │   │   ├── display.h
 │   │   └── keyboard.h
+│   │   └── font.h                  # Font mapping for 8x8 
 │   │
 │   └── lib/
 │       ├── data_structures/
