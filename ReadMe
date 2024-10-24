@@ -2,16 +2,18 @@ This OS is part of the System Design Course.
 
 # Features
 
-- [x] Risc-V ISA
-- [x] Shell
-- [x] Memory Management
-- [x] Process Management like creating a new process, switching between processes
-- [x] Interrupts and Exceptions
-- [x] Keyboard and Display Drivers 
-- [x] File System and management like creating, deleting, opening, closing files
-- [x] Shell Commands like `cat`, `echo`, `sleep`
+- [ ] Risc-V ISA
+- [ ] Shell
+- [ ] Memory Management
+- [ ] Process Management like creating a new process, switching between processes
+- [ ] Interrupts and Exceptions
+- [ ] Keyboard and Display Drivers 
+- [ ] File System and management like creating, deleting, opening, closing files
+- [ ] Shell Commands like `cat`, `echo`, `sleep`
 - [ ] System Calls like `open`, `read`, `write`
 
+OS model tell the basic flow of operations, including the hardware components like interrupt vector table.
+Depending on the hardware implementation of the interrupt tables, implementation will be done.
 
 Above are the feature of the JOI OS we are going to build.
 The project structure is as follows:
