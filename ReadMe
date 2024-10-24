@@ -37,8 +37,7 @@ The project structure is as follows:
 │   │   │   └── queue.cpp          # Queue implementation
 │   │   │
 │   │   ├── utils/
-│   │   │   ├── string.cpp         # String manipulation utilities
-│   │   │   └── math.cpp           # Math utilities
+│   │   │   └── string.cpp           # String manipulation utilities
 │   │   │
 │   │   └── heap.cpp               # Heap memory allocation
 │   │
@@ -64,8 +63,7 @@ The project structure is as follows:
 │       │   └── queue.h
 │       │
 │       ├── utils/
-│       │   ├── string.h
-│       │   └── math.h
+│       │   └── string.h
 │       │
 │       └── heap.h
 │
@@ -74,9 +72,5 @@ The project structure is as follows:
 │
 ├── config/
 │   └── memory_map.h               # Memory layout configuration
-│
-├── docs/
-│   ├── architecture.md            # Overall system architecture
-│   └── api.md                     # API documentation
 │
 └── Makefile                       # Build system
